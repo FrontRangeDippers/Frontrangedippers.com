@@ -39,6 +39,32 @@ article {
     padding: 1em;
     overflow: hidden;
 }
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25.00%;
+    padding: 0px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Will resize to fit bage under 700px */
+@media (max-width: 700px) {
+	.column {width: 100%;
+}
 </style>
 </head>
 
