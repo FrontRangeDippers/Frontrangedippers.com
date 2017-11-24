@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 div.container {
-    width: 100%;
-    border: 3px solid black;
+	width: 99%;
+    border: 7px solid black;
 }
 
 header, footer {
@@ -15,52 +16,77 @@ header, footer {
     text-align: center;
 }
 
-nav {
-    float: right;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-   
-nav ul a {
-    text-decoration: none;
+.links {
+	background-color:DeepSkyBlue;
+	float:right;
+	width:15%;
+	padding:15px;
+	margin-top:7px;
+	text-align:center;
 }
 
 article {
-    margin-right: 120px;
+    mar.right {
+	background-color:#e5e5e5;
+	float:left;
+	width:20%;
+	padding:15px;
+	margin-top:7px;
+	text-align:center;
+}
+gin-right: 120px;
     border-right: 3px solid black;
     padding: 1em;
     overflow: hidden;
 }
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25.00%;
+    padding: 0px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Will resize to fit page under 700px */
+@media (max-width: 700px) {
+	.column {width: 100%;
+}
+	
 </style>
 </head>
-<body bgcolor="DeepSkyBlue">
+<body bgcolor="White">
 
 <div class="container">
 <header>
-	<img src="https://tinyurl.com/yd4z3ur8" alt="tiny">
 	<h1>Front Range Dippers</h1>
 </header>
 
-<nav>
-	<ul>
-		<li><a href="https://frontrangedippers.github.io/"> Home </a></li>
-		<li><a href="https://frontrangedippers.github.io/Gallery/"> Gallery </a></li>
-		<li><a href="https://frontrangedippers.github.io/Our-Team/"> Our Team </a></li>
-		<li><a href="https://www.etsy.com/people/770ae8q6?ref=hdr_user_menu"> Visit Etsy </a></li>
-		<li><a href="https://frontrangedippers.github.io/Custom-Orders/"> Custom Orders </a></li>
-		<li><a href="https://frontrangedippers.github.io/Contact-Us/"> Contact Us </a></li>
-	</ul>
-</nav>
+<div class="links">
+		<div><a href="index.html"> Home </a></div>
+		<div><a href="Store.html"> Store </a></div>
+		<div><a href="Gallery.html"> Artist Gallery </a></div>
+		<div><a href="OurTeam.html"> Our Team </a></div>
+		<div><a href="ContactUs.html"> Contact Us </a></div>	
+</div>
 
 <article>
 	<center>
-		<p>Amanda Carter</p>
+		<h2>Amanda Carter</h2>
+			<p></p>
     </center>
 </article>
 
